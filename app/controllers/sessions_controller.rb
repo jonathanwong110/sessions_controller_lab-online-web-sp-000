@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     session[:name] = params[:name]
     redirect_to '/'
     if session[:name] == nil
-      redirect_to '/'
+      redirect_to '/new'
     else
     end
   end
