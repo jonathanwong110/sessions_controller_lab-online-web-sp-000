@@ -7,8 +7,8 @@ class SessionsController < ApplicationController
   def create
   end
   
-  def learn
+  def destroy
+    session.delete :name
   end
-  
   
 end
